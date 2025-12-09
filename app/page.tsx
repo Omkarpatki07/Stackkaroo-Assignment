@@ -5,7 +5,6 @@ export default function Home() {
         <h2 style={styles.title}>GET IN TOUCH</h2>
 
         <form style={styles.form}>
-          
           {/* First + Last Name Row */}
           <div style={styles.row}>
             <div style={styles.inputGroup}>
@@ -37,7 +36,6 @@ export default function Home() {
             <textarea placeholder="Message" style={styles.textarea}></textarea>
           </div>
 
-          {/* Submit Button */}
           <button type="submit" style={styles.button}>SUBMIT</button>
         </form>
       </div>
@@ -52,72 +50,82 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding: "20px"
-  },
+    padding: 20
+  } as React.CSSProperties,
+
   formBox: {
     background: "#fff",
-    padding: "30px",
-    borderRadius: "8px",
-    width: "420px",
+    padding: 30,
+    borderRadius: 8,
+    width: 420,
     boxShadow: "0px 4px 15px rgba(0,0,0,0.2)",
-  },
+  } as React.CSSProperties,
+
   title: {
     textAlign: "center",
-    marginBottom: "20px",
-    fontSize: "22px",
+    marginBottom: 20,
+    fontSize: 22,
     fontWeight: "bold",
-    color:" #0b0b0bff",
-  },
+    color: "#0b0b0b"
+  } as React.CSSProperties,
+
   form: {
     display: "flex",
     flexDirection: "column",
-  },
+  } as React.CSSProperties,
+
   row: {
     display: "flex",
-    gap: "10px",
-    color: "black"
-  },
+    gap: 10,
+  } as React.CSSProperties,
+
   inputGroup: {
     display: "flex",
     flexDirection: "column",
     flex: 1
-  },
+  } as React.CSSProperties,
+
   label: {
-    fontSize: "14px",
-    marginBottom: "5px",
-    fontWeight: "500",
-    color: "#333",
-  },
+    fontSize: 14,
+    marginBottom: 5,
+    fontWeight: 500,
+    color: "#333"
+  } as React.CSSProperties,
+
   input: {
-    width:"100%",
-    padding: "12px",
+    padding: 12,
     border: "1px solid #ccc",
-    borderRadius: "5px",
+    borderRadius: 5,
     color: "black",
-  },
+    width: "100%"
+  } as React.CSSProperties,
+
   inputFull: {
-    padding: "12px",
+    padding: 12,
     border: "1px solid #ccc",
-    borderRadius: "5px",
-    marginTop: "5px",
-    color: "black",
-  },
+    borderRadius: 5,
+    marginTop: 5,
+    color: "black"
+  } as React.CSSProperties,
+
   textarea: {
-    padding: "12px",
+    padding: 12,
     border: "1px solid #ccc",
-    borderRadius: "5px",
-    height: "100px",
-    marginTop: "5px",
+    borderRadius: 5,
+    height: 100,
+    marginTop: 5,
     color: "black",
-  },
+    resize: "none"
+  } as React.CSSProperties,
+
   button: {
-    marginTop: "15px",
-    padding: "12px",
+    marginTop: 15,
+    padding: 12,
     background: "#4A90E2",
     color: "white",
     border: "none",
-    borderRadius: "5px",
+    borderRadius: 5,
     fontWeight: "bold",
-    cursor: "pointer",
-  }
+    cursor: "pointer"
+  } as React.CSSProperties,
 };
