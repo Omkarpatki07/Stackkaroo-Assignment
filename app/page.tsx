@@ -5,7 +5,7 @@ export default function Home() {
         <h2 style={styles.title}>GET IN TOUCH</h2>
 
         <form style={styles.form}>
-          {/* First + Last Name Row */}
+          
           <div style={styles.row}>
             <div style={styles.inputGroup}>
               <label style={styles.label}>First Name</label>
@@ -18,19 +18,19 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Email */}
+          
           <div style={styles.inputGroup}>
             <label style={styles.label}>Email</label>
             <input type="email" placeholder="Your email" style={styles.inputFull} />
           </div>
 
-          {/* Website URL */}
+         
           <div style={styles.inputGroup}>
             <label style={styles.label}>Website</label>
             <input type="text" placeholder="http://" style={styles.inputFull} />
           </div>
 
-          {/* Message */}
+          
           <div style={styles.inputGroup}>
             <label style={styles.label}>Message</label>
             <textarea placeholder="Message" style={styles.textarea}></textarea>
@@ -121,7 +121,7 @@ const styles = {
   button: {
     marginTop: 15,
     padding: 12,
-    background: "#4A90E2",
+    background: "linear-gradient(to right, #5FB36A, #4189CC)",
     color: "white",
     border: "none",
     borderRadius: 5,
